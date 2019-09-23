@@ -1,0 +1,8 @@
+#kotak{
+	width: 200px;
+	height: 200px;
+	background-color: salmon;
+	position: relative;
+	top: 20px;
+	left: 0;
+}

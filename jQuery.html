@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan JQuery</title>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		.navbar{
+			width: 100%;
+			height: 50px;
+			background-color: #f0f0f0;
+			line-height: 50px;
+			color: #000;
+			position: fixed;
+			z-index: 9;
+		}
+		#kotak{
+			width: 200px;
+			height: 200px;
+			background-color: salmon;
+			margin: 20px;
+		}
+		.sembunyi{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="navbar">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Profile</a></li>
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</div>
+	<br>
+	<br><br><br><br><br><br><br><br><br><br><br><br>
+	<button type="button" id="tampilkan">tampilkan</button>
+	<button type="button" id="sembunyikan">sembunyikan</button>
+	<div id="kotak"></div>
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// 	$('#kotak').addClass('sembunyi');
+			// 	$('#tampil').click(function(){
+			// 		// $('#kotak').removeClass('sembunyi');
+			// 		$('#kotak').slideToggle(500);
+			// 	});
+			$('#sembunyikan').click(function(){
+				$('#kotak').hide();
+			});
+			$('#tampilkan').click(function(){
+				$('#kotak').show();
+			});
+		 });
+	</script>
+</body>
+</html>

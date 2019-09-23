@@ -1,0 +1,21 @@
+.box{
+	width: 20px;
+	height: 20px;
+	background-color: salmon;
+	margin: 2px;
+	text-align: center;
+	line-height: 20px;
+	font-size: 10px;
+	font-family: arial;
+	color: white;
+	font-weight: bold;
+	float: left;
+}
+
+br{
+	clear: both;
+}
+
+label{
+	display: block;
+}

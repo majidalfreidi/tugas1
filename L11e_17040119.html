@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LATIHAN 11E</title>
+<style>
+	* {
+	margin: 0;
+	padding: 0;
+}
+
+h2 { 
+	margin: 20px;
+	text-align: center;
+	font-family: arial;
+}
+
+#container {
+	width: 360px;
+	margin: 20px auto;
+}
+
+.gambar {
+	width: 80px;
+	height: 80px;
+	background-color: salmon;
+	font-size: 30px;
+	font-family: arial;
+	color: white;
+	text-align: center;
+	line-height: 80px;
+	position: relative;
+	float: left;
+	margin: 5px;
+}
+
+.gambar span {
+	width: 15px;
+	height: 15px;
+	background-color: black;
+	font-family: arial;
+	font-size: 11px;
+	color: white;
+	border-radius: 50%;
+	position: absolute;
+	line-height: 15px;
+	opacity: .7;
+	top: 3px;
+	right: 3px;
+	cursor: pointer;
+	display: none;
+}
+
+.gambar:hover span {
+	display: block;
+}
+</style>
+</head>
+<body>
+<h2>My Gallery</h2>
+
+<div id="container">
+	
+	<div class="gambar">
+		<span>x</span>
+		1
+	</div>
+
+	<div class="gambar">
+		<span>x</span>
+		2
+	</div>
+
+	<div class="gambar">
+		<span>x</span>
+		3
+	</div>
+
+	<div class="gambar">
+		<span>x</span>
+		4
+	</div>
+
+	<div class="gambar">
+		<span>x</span>
+		5
+	</div>
+
+	<div class="gambar">
+		<span>x</span>
+		6
+	</div>
+
+</div>
+
+<script>
+	var close=document.getElementByTagName('span');
+	for(var i=0;i<close.length;i++){
+		close[i].addEventLisener('click,' function(){
+			if(confirm('hapus gambar?')){
+				this.parentNode.style.display='none';
+			}
+		});
+	}
+</script>
+</body>
+</html>
